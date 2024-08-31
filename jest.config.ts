@@ -12,5 +12,5 @@ const config: Config = {
  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
  
 }
- 
+
 export default createJestConfig(config)
