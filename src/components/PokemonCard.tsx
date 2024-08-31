@@ -5,7 +5,11 @@ import PokemonDetails from './PokemonDetails';
 const PokemonCard = () => {
     const [pokemon, setPokemon] = useState(null);
 
+    const audio = new Audio('/sound.mp3');
+
     const fetchPokemon = async () => {
+        audio.play();
+        
         const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 898 + 1));
         const data = await response.json();
         setPokemon(data);
