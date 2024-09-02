@@ -3,7 +3,9 @@ import PokemonDetails from "@/components/PokemonDetails"
 import {render, screen} from "@testing-library/react"
 
 beforeEach(() => {
-    const mockData = {name: "",
+    const mockData = {
+    id: 2,
+    name: "",
     height: 2,
     weight: 2,
     sprites: {
